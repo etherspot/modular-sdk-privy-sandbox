@@ -46,7 +46,7 @@ const Login = () => {
       chainId: 137, // any chainId compatible with the Modular SDK
       bundlerProvider: new EtherspotBundler(
         137, // any chainId compatible with the Modular SDK
-        "eyJvcmciOiI2NTIzZjY5MzUwOTBmNzAwMDFiYjJkZWIiLCJpZCI6IjMxMDZiOGY2NTRhZTRhZTM4MGVjYjJiN2Q2NDMzMjM4IiwiaCI6Im11cm11cjEyOCJ9" // Etherspot Bundler API Key
+        process.env.REACT_APP_ETHERSPOT_BUNDLER_API_KEY // Etherspot Bundler API Key
       ),
       factoryWallet: "etherspotModular" as Factory,
     });
