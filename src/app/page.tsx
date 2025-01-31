@@ -9,7 +9,7 @@ export default function Home() {
   // PrivyProvider will give you access to the Privy Login UI and to Privy Hooks
   return (
     <PrivyProvider
-      appId="clx07qnbf07qdwlja56mg55er"
+      appId={process.env.REACT_APP_PRIVY_APP_ID || ""}
       config={{
         appearance: {
           theme: "dark",
